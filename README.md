@@ -2,22 +2,26 @@
 
 ## Content
 
-* [Run it](#run-it)
-* [Deploying a containerized web application on Google Cloud](#deploying-a-containerized-web-application-on-google-cloud)
-   * [Dockerize your webapp](#dockerize-your-webapp)
+* [Test it first!](#test-it-first)
+   * [Using Docker](#using-docker)
+   * [Without Docker](#without-docker)
+* [Building your responsive Flask app](#building-your-responsive-flask-app)
+* [Dockerize your webapp](#dockerize-your-webapp)
+* [Deploying your containerized webapp on Google Cloud](#deploying-your-containerized-webapp-on-google-cloud)
+   * [Install Google Cloud SDK](#install-google-cloud-sdk)
+   * [Push your Docker image on a cloud registry](#push-your-docker-image-on-a-cloud-registry)
       * [Push your image to DockerHub](#push-your-image-to-dockerhub)
       * [Push your image to Google Image Registry](#push-your-image-to-google-image-registry)
-   * [Install Google Cloud SDK](#install-google-cloud-sdk)
       * [Google Cloud comes with "components"](#google-cloud-comes-with-components)
-      * [Install Kubernetes components](#install-kubernetes-components)
-      * [From Google Cloud Console](#from-google-cloud-console)
+      * [Install a new component: Kubernetes](#install-a-new-component-kubernetes)
+      * [Create your cloud project](#create-your-cloud-project)
       * [Get info on the project](#get-info-on-the-project)
    * [Create your cloud cluster with Google Cloud SDK](#create-your-cloud-cluster-with-google-cloud-sdk)
-      * [Run our image as an app on the cluster](#run-our-image-as-an-app-on-the-cluster)
-      * [Allow the cluster to be accessible from the outside](#allow-the-cluster-to-be-accessible-from-the-outside)
+      * [Run your Docker image as an app on the cluster](#run-your-docker-image-as-an-app-on-the-cluster)
+      * [Allow the cluster to serve the app to the world!](#allow-the-cluster-to-serve-the-app-to-the-world)
    * [Manage the Domain Name of the webapp](#manage-the-domain-name-of-the-webapp)
-      * [Configuring Domain Names with Static IP Addresses](#configuring-domain-names-with-static-ip-addresses)
-   * [Deploy a new version of the webapp:](#deploy-a-new-version-of-the-webapp)
+      * [Configuring your Domain Names with Static IP Addresses](#configuring-your-domain-names-with-static-ip-addresses)
+   * [Deploy a new version of your webapp](#deploy-a-new-version-of-your-webapp)
 
 
 
